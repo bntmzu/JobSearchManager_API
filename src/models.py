@@ -1,10 +1,12 @@
 class Vacancy:
-    __slots__ = ['_title', '_url', '_salary', '_description']
+    __slots__ = ['_title', '_url', '_salary_from', '_salary_to', '_currency', '_description']
 
-    def __init__(self, title: str, url: str, salary: str, description: str):
+    def __init__(self, title: str, url: str, salary_from: int, salary_to: int, currency: str, description: str):
         self._title = self._validate_title(title)
         self._url = self._validate_url(url)
-        self._salary = self._validate_salary(salary)
+        self._salary_from = self._validate_salary(salary_from)
+        self._salary_to = self._validate_salary(salary_to)
+        self._currency = self._validate_currency(currency)
         self._description = self._validate_description(description)
 
     @property
@@ -16,8 +18,16 @@ class Vacancy:
         return self._url
 
     @property
-    def salary(self) -> str:
-        return self._salary
+    def salary_from(self) -> int:
+        return self._salary_from
+
+    @property
+    def salary_to(self) -> int:
+        return self._salary_to
+
+    @property
+    def currency(self) -> str:
+        return self._currency
 
     @property
     def description(self) -> str:
@@ -33,8 +43,15 @@ class Vacancy:
             raise ValueError("Invalid URL")
         return url
 
-    def _validate_salary(self, salary: str) -> str:
+    def _validate_salary(self, salary: int) -> int:
+        if salary is not None and not isinstance(salary, int):
+            raise ValueError("Salary must be an integer")
         return salary
+
+    def _validate_currency(self, currency: str) -> str:
+        if not currency:
+            raise ValueError("Currency cannot be empty")
+        return currency
 
     def _validate_description(self, description: str) -> str:
         if not description:
@@ -60,9 +77,12 @@ class Vacancy:
         return self._get_salary_value() != other._get_salary_value()
 
     def _get_salary_value(self) -> int:
-        parts = self._salary.replace('руб', '').replace(' ', '').split('до')
-        if len(parts) == 2:
-            return int(parts[1])
-        elif len(parts) == 1:
-            return int(parts[0])
+        """
+        Returns the maximum salary value for comparison.
+        If it is not specified, returns the minimum salary value.
+        """
+        if self._salary_to is not None:
+            return self._salary_to
+        elif self._salary_from is not None:
+            return self._salary_from
         return 0

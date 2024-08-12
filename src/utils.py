@@ -12,19 +12,18 @@ def validate_url(url: str) -> str:
     return url
 
 
-def parse_salary(salary: dict) -> str:
+def parse_salary(salary: dict) -> tuple:
+    """
+    Parses the salary dictionary to extract minimum and maximum salary values and currency.
+
+    :param salary: The salary dictionary from the API response.
+    :return: A tuple with (salary_from, salary_to, currency), where currency is a string and both salaries are integers or None if not available.
+    """
     if salary is None:
-        return "Salary not specified"
+        return (None, None, "RUR")
 
     salary_from = salary.get('from')
     salary_to = salary.get('to')
     currency = salary.get('currency', 'RUR')
 
-    if salary_from and salary_to:
-        return f"от {salary_from} до {salary_to} {currency}"
-    elif salary_from:
-        return f"от {salary_from} {currency}"
-    elif salary_to:
-        return f"до {salary_to} {currency}"
-    else:
-        return "Salary not specified"
+    return (salary_from, salary_to, currency)

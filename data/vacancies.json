@@ -58,5 +58,395 @@
         "url": "https://hh.ru/vacancy/79081934",
         "salary": "от 58900 RUR",
         "description": "Знание положений бухгалтерского учета. Знание налогового законодательства, принципов и правил налогового учета. Знание принципов и правил учета в рамках участков..."
+    },
+    {
+        "title": "Начальник отдела аналитики и статистики",
+        "url": "https://hh.ru/vacancy/101438130",
+        "salary": "Salary not specified",
+        "description": "Высшее образование. Опыт работы на аналогичной должности от 3-х лет. Способность работать с большими массивами информации, быстро и качественно..."
+    },
+    {
+        "title": "Ведущий специалист аналитики и статистики",
+        "url": "https://hh.ru/vacancy/101439114",
+        "salary": "Salary not specified",
+        "description": "Высшее образование. Опыт работы на аналогичной должности не менее 2-х лет. Способность работать с большими массивами информации, быстро и..."
+    },
+    {
+        "title": "Директор дивизиона г. Москва",
+        "url": "https://hh.ru/vacancy/97635331",
+        "salary": "Salary not specified",
+        "description": "Опыт аналогичной успешной работы не менее 3-х лет (повышение эффективности имеющейся структуры розничных продаж) в интенсивно развивающейся компании FMCG. "
+    },
+    {
+        "title": "Специалист 1 категории по работе с Excel",
+        "url": "https://hh.ru/vacancy/94595084",
+        "salary": "от 80000 до 90000 RUR",
+        "description": "Знание Excel - умение работать с формулами, адресными массивами, фильтрами, сортировкой <highlighttext>данных</highlighttext>, построение графиков и диаграмм, сводных таблиц, отличное знание функций. "
+    },
+    {
+        "title": "Руководитель отдела в департаменте маркетинга и продаж",
+        "url": "https://hh.ru/vacancy/100743408",
+        "salary": "Salary not specified",
+        "description": "Управленческий опыт (отдел, подразделение от 2 до 5 чел). Практический опыт в маркетинге не менее 5 лет, подкрепленный знаниями (высшее..."
+    },
+    {
+        "title": "Senior/ Middle+ Java разработчик",
+        "url": "https://hh.ru/vacancy/86287528",
+        "salary": "Salary not specified",
+        "description": "Опыт коммерческой разработки на Java от 5 лет. Знание Spring Framework (JDBC, Boot, MVC). Опыт работы с реляционными БД. "
+    },
+    {
+        "title": "ГИС-специалист",
+        "url": "https://hh.ru/vacancy/99260619",
+        "salary": "от 100000 RUR",
+        "description": "Высшее образование. Опыт работы <highlighttext>аналитиком</highlighttext> <highlighttext>данных</highlighttext>/картографом от 1 года. Знание MS Office на уровне уверенного пользователя, приветствуется опыт работы..."
+    },
+    {
+        "title": "Аналитик",
+        "url": "https://hh.ru/vacancy/90351791",
+        "salary": "до 100000 RUR",
+        "description": "Уверенные навыки <highlighttext>аналитики</highlighttext> и умение работать с большими массивами <highlighttext>данных</highlighttext>. Развитые аналитические способности, системность, ориентация на результат, умение работать в..."
+    },
+    {
+        "title": "Intern Data Analyst / Стажер Аналитик данных",
+        "url": "https://hh.ru/vacancy/103914500",
+        "salary": "Salary not specified",
+        "description": "Умение собирать, обрабатывать и анализировать большие объемы <highlighttext>данных</highlighttext> с помощью различных инструментов. Умение использовать инструменты визуализации <highlighttext>данных</highlighttext>: создавать информативные дашборды. "
+    },
+    {
+        "title": "Начальник отдела аналитики и статистики",
+        "url": "https://hh.ru/vacancy/101438130",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Высшее образование. Опыт работы на аналогичной должности от 3-х лет. Способность работать с большими массивами информации, быстро и качественно..."
+    },
+    {
+        "title": "Ведущий специалист аналитики и статистики",
+        "url": "https://hh.ru/vacancy/101439114",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Высшее образование. Опыт работы на аналогичной должности не менее 2-х лет. Способность работать с большими массивами информации, быстро и..."
+    },
+    {
+        "title": "Директор дивизиона г. Москва",
+        "url": "https://hh.ru/vacancy/97635331",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт аналогичной успешной работы не менее 3-х лет (повышение эффективности имеющейся структуры розничных продаж) в интенсивно развивающейся компании FMCG. "
+    },
+    {
+        "title": "Специалист 1 категории по работе с Excel",
+        "url": "https://hh.ru/vacancy/94595084",
+        "salary_from": 80000,
+        "salary_to": 90000,
+        "currency": "RUR",
+        "description": "Знание Excel - умение работать с формулами, адресными массивами, фильтрами, сортировкой <highlighttext>данных</highlighttext>, построение графиков и диаграмм, сводных таблиц, отличное знание функций. "
+    },
+    {
+        "title": "Руководитель отдела в департаменте маркетинга и продаж",
+        "url": "https://hh.ru/vacancy/100743408",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Управленческий опыт (отдел, подразделение от 2 до 5 чел). Практический опыт в маркетинге не менее 5 лет, подкрепленный знаниями (высшее..."
+    },
+    {
+        "title": "Senior/ Middle+ Java разработчик",
+        "url": "https://hh.ru/vacancy/86287528",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт коммерческой разработки на Java от 5 лет. Знание Spring Framework (JDBC, Boot, MVC). Опыт работы с реляционными БД. "
+    },
+    {
+        "title": "ГИС-специалист",
+        "url": "https://hh.ru/vacancy/99260619",
+        "salary_from": 100000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Высшее образование. Опыт работы <highlighttext>аналитиком</highlighttext> <highlighttext>данных</highlighttext>/картографом от 1 года. Знание MS Office на уровне уверенного пользователя, приветствуется опыт работы..."
+    },
+    {
+        "title": "Финансовый аналитик (финансовое моделирование)",
+        "url": "https://hh.ru/vacancy/103939333",
+        "salary_from": 220000,
+        "salary_to": 280000,
+        "currency": "RUR",
+        "description": "Опыт работы в фин. моделировании от 3-х лет. Умение построить «с нуля» финансовую модель для любого инвест. "
+    },
+    {
+        "title": "Аналитик",
+        "url": "https://hh.ru/vacancy/90351791",
+        "salary_from": null,
+        "salary_to": 100000,
+        "currency": "RUR",
+        "description": "Уверенные навыки <highlighttext>аналитики</highlighttext> и умение работать с большими массивами <highlighttext>данных</highlighttext>. Развитые аналитические способности, системность, ориентация на результат, умение работать в..."
+    },
+    {
+        "title": "Intern Data Analyst / Стажер Аналитик данных",
+        "url": "https://hh.ru/vacancy/103914500",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Умение собирать, обрабатывать и анализировать большие объемы <highlighttext>данных</highlighttext> с помощью различных инструментов. Умение использовать инструменты визуализации <highlighttext>данных</highlighttext>: создавать информативные дашборды. "
+    },
+    {
+        "title": "Территориальный специалист по развитию внешней торговой сети",
+        "url": "https://hh.ru/vacancy/101751354",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Средне-специальное образование. Опыт в продажах или консультировании клиентов/партнеров. Умение договариваться и находить подходы в решении вопросов. "
+    },
+    {
+        "title": "Сервисный инженер по АСУ (IT)",
+        "url": "https://hh.ru/vacancy/66928365",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт установки, наладки, обслуживания оборудования (систем мониторинга транспорта, систем навигации, IT/связи, промышленного оборудования и АСУ). Готовность к командировкам (длительностью..."
+    },
+    {
+        "title": "Методолог\\методист образовательных программ",
+        "url": "https://hh.ru/vacancy/96517888",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Высшее образование. Опыт разработки обучающих программ (от 5 тем из разных областей). Опыт работы тренером/преподавателем для разных аудиторий в..."
+    },
+    {
+        "title": "JavaScript Developer (NGFW)",
+        "url": "https://hh.ru/vacancy/104471556",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Знание JavaScript/TypeScript, React.js, Node.js. Понимание базовых принципов веб-разработки (протокол HTTP/WebSocket, HTML/CSS/JS, REST API). "
+    },
+    {
+        "title": "Руководитель проектов",
+        "url": "https://hh.ru/vacancy/105126653",
+        "salary_from": 200000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Наличие своих самостоятельных бригад. (Желательно! ). Опыт в изготовлении и монтаже металлоконструкций. (Обязателен). Высшее строительное образование. Знание ГОСТов, СНиПов и нормативных..."
+    },
+    {
+        "title": "Frontend Intern (Almaty)",
+        "url": "https://hh.ru/vacancy/105521224",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "B2 level or higher in English. Commitment to dedicate 6 hours a day to study and <highlighttext>development</highlighttext>."
+    },
+    {
+        "title": "Менеджер по работе с клиентами",
+        "url": "https://hh.ru/vacancy/87777307",
+        "salary_from": 70000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Инициативный. Коммуникабельный. Хотите развиваться в сфере продаж и зарабатывать. Опыт продаж будет Вашим преимуществом."
+    },
+    {
+        "title": "Front-End React JS разработчик",
+        "url": "https://hh.ru/vacancy/105274370",
+        "salary_from": 1000,
+        "salary_to": 1800,
+        "currency": "USD",
+        "description": "1. Опыт разработки сложных приложений на React JS, Redux от двух лет. 2. Опыт или желание работы Tailwind CSS и..."
+    },
+    {
+        "title": "IT Project Manager (Продуктовая разработка)",
+        "url": "https://hh.ru/vacancy/104829518",
+        "salary_from": 150000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Понимание всего жизненного цикла продуктовой разработки и методологий управления (например, Agile, Scrum). Опыт работы с продуктовыми командами. Способность документировать бизнес..."
+    },
+    {
+        "title": "Руководитель направления маркетплейс",
+        "url": "https://hh.ru/vacancy/104885209",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт работы с CRM-системами и сервисами <highlighttext>аналитики</highlighttext> (MPStats, EggHeads и т.п.). Аналитический склад ума, системный подход. "
+    },
+    {
+        "title": "Клиентский аналитик",
+        "url": "https://hh.ru/vacancy/101511324",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Уверенное владение SQL. Знание математической статистики - желательно, но возможно обучение в процессе работы. Опыт программирования на R или Python – как..."
+    },
+    {
+        "title": "Менеджер по креативным коммуникациям",
+        "url": "https://hh.ru/vacancy/96511343",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт подготовки кампаний по продвижению (написание брифов, подготовка текстов, подготовка баз для рассылки). Опыт самостоятельного ведения проектов. Навыки ведения переговоров. "
+    },
+    {
+        "title": "Помощник главного кредитного аналитика",
+        "url": "https://hh.ru/vacancy/77533884",
+        "salary_from": 30000,
+        "salary_to": 50000,
+        "currency": "RUR",
+        "description": "Коммуникативные навыки. - Аналитический склад ума. - Целеустремленность. - Самоорганизация. - Инициативность. - Активная жизненная позиция. Hard skill: - Опыт работы с документами. - Грамотная устная и..."
+    },
+    {
+        "title": "Бухгалтер 1 категория (ВНА и ТМЦ)",
+        "url": "https://hh.ru/vacancy/79081934",
+        "salary_from": 58900,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Знание положений бухгалтерского учета. Знание налогового законодательства, принципов и правил налогового учета. Знание принципов и правил учета в рамках участков..."
+    },
+    {
+        "title": "Продавец-кассир (Октябрьский р-он)",
+        "url": "https://hh.ru/vacancy/48658219",
+        "salary_from": 59500,
+        "salary_to": 67200,
+        "currency": "RUR",
+        "description": "Готовые общаться с покупателями. Желающие учиться и нацеленные на результат. Внимательные и доброжелательные."
+    },
+    {
+        "title": "Специалист 1 категории по работе с Excel",
+        "url": "https://hh.ru/vacancy/94595084",
+        "salary_from": 80000,
+        "salary_to": 90000,
+        "currency": "RUR",
+        "description": "Высшее образование. Аналогичный опыт работы от 3 лет. Знание Excel - умение работать с формулами, адресными массивами, фильтрами, сортировкой данных, построение..."
+    },
+    {
+        "title": "Junior Python разработчик",
+        "url": "https://hh.ru/vacancy/104420332",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Готовность работать в единственном числе в отделе HR, но при этом быть командным игроком и взаимодействовать с <highlighttext>разработчиками</highlighttext> других команд. "
+    },
+    {
+        "title": "Руководитель ИТ-проектов",
+        "url": "https://hh.ru/vacancy/83103469",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт формирования проектных команд. Опыт постановки задач проектным командам (аналитикам, <highlighttext>разработчикам</highlighttext>, тестировщикам) и контроль их выполнения. Навык успешного управления рисками..."
+    },
+    {
+        "title": "Web-программист (Bitrix)",
+        "url": "https://hh.ru/vacancy/83348619",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Знание специализированных программ: Git, Jira. Отличные знания Bitrix и Bitrix24, опыт в разработке модулей. Знание языков, фреймворков: PHP / JS..."
+    },
+    {
+        "title": "HR-директор",
+        "url": "https://hh.ru/vacancy/97943638",
+        "salary_from": 200000,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Высшее профильное образование. Опыт работы в аналогичной должности от 5-и лет. Опыт создания и управления командой. Знание современных методов..."
+    },
+    {
+        "title": "Технический лидер Стрима",
+        "url": "https://hh.ru/vacancy/99524878",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Навык управления крупными проектами в части ИТ. Опыт выстраивания процессов. Развитые менеджерские качества. Опыт работы архитектором/back-end <highlighttext>разработчиком</highlighttext> приветствуется."
+    },
+    {
+        "title": "Системный аналитик",
+        "url": "https://hh.ru/vacancy/83050625",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт на аналогичной позиции от 3-х лет. Опыт участия в разработке web-решений. Опыт участия в разработке решений с..."
+    },
+    {
+        "title": "Руководитель отдела технической поддержки пользователей",
+        "url": "https://hh.ru/vacancy/104088381",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт работы в аналогичной должности от 3-х лет (обслуживание не менее 1000 пользователей). В ИТ от 5 лет. "
+    },
+    {
+        "title": "Middle+ / Senior Frontend Developer",
+        "url": "https://hh.ru/vacancy/97616545",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт в экосистеме React-а от 4-х лет. Опыт с TypeScript. Опыт работы с OSM картами. Опыт применения основных..."
+    },
+    {
+        "title": "Программист Java",
+        "url": "https://hh.ru/vacancy/103232213",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Java 17. EJB 3. WildFly. Hibernate. Spring(MVC, Data, Transaction, Security). JS (Angular, JQuery, Thymeleaf, React). PostgreSQL. Git, Maven. "
+    },
+    {
+        "title": "Ведущий разработчик 1С",
+        "url": "https://hh.ru/vacancy/91681393",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Уверенные знание синтаксиса и стандартов разработки конфигураций 1С. Хорошее знание платформы 1С: Предприятие 8.3 и упр.режима (в..."
+    },
+    {
+        "title": "Программист-стажер Frontend",
+        "url": "https://hh.ru/vacancy/105438514",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт работы с HTML, CSS и JavaScript от 1 года. Знание одного из современных JavaScript-фреймворков, таких как React, Vue. "
+    },
+    {
+        "title": "Java-разработчик",
+        "url": "https://hh.ru/vacancy/104643122",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Хорошее знание Java SE (8). Опыт работы с СУБД PostgreSQL. Опыт в разработке web-приложений (back+front (React, Angular)). "
+    },
+    {
+        "title": "Frontend-разработчик",
+        "url": "https://hh.ru/vacancy/105623197",
+        "salary_from": 700000,
+        "salary_to": 1300000,
+        "currency": "KZT",
+        "description": "Опыт работы со сборщиками webpack, vite, etc.. Отличные знания по JavaScript. Знания TypeScript. Опыт работы с js фреймворками, приветствуется Vue.js..."
+    },
+    {
+        "title": "Front-end разработчик junior / middle (TypeScript, React)",
+        "url": "https://hh.ru/vacancy/105604053",
+        "salary_from": 100000,
+        "salary_to": 280000,
+        "currency": "RUR",
+        "description": "Опыт веб-разработки с помощью TypeScript и React.js в production от 1 года."
+    },
+    {
+        "title": "Front-End Developer",
+        "url": "https://hh.ru/vacancy/105660133",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт разработки на позиции Front-End <highlighttext>Developer</highlighttext> от 3-х лет. - Отличные знания технологий: JavaScript, HTML, CSS, React, React Hooks..."
+    },
+    {
+        "title": "Ведущий программист 1С ERP",
+        "url": "https://hh.ru/vacancy/91261958",
+        "salary_from": null,
+        "salary_to": null,
+        "currency": "RUR",
+        "description": "Опыт сопровождения и доработки типовых конфигураций 1С, в т.ч. 1С: ERP 2.5, знание типового функционала (оперативный..."
     }
 ]

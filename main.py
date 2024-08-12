@@ -4,52 +4,149 @@ from src.storage import JSONFileStorage
 from src.utils import validate_url, parse_salary
 
 
+def filter_vacancies(vacancies, keywords):
+    """Filters vacancies by keywords."""
+    return [
+        vac for vac in vacancies
+        if any(keyword.lower() in vac.description.lower() for keyword in keywords)
+    ]
+
+
+def get_vacancies_by_salary(vacancies, salary_range):
+    """Filters vacancies by salary range."""
+    min_salary, max_salary = map(int, salary_range.split('-'))
+    return [
+        vac for vac in vacancies
+        if
+                (vac.salary_from is not None and vac.salary_from >= min_salary) and
+                (vac.salary_to is not None and vac.salary_to <= max_salary)
+
+    ]
+
+
+def sort_vacancies(vacancies):
+    """Sorts vacancies by descending salary."""
+    return sorted(vacancies, key=lambda vac: vac.salary_to or vac.salary_from or 0, reverse=True)
+
+
+def get_top_vacancies(vacancies, top_n):
+    """Gets the top N vacancies."""
+    return vacancies[:top_n]
+
+
+def print_vacancies(vacancies):
+    """Prints vacancies to the screen."""
+    for idx, vac in enumerate(vacancies, start=1):
+        print(f"\nVacancy {idx}:")
+        print(f"Title: {vac.title}")
+        print(f"URL: {vac.url}")
+        if vac.salary_from and vac.salary_to:
+            salary_display = f"from {vac.salary_from} to {vac.salary_to} {vac.currency}"
+        elif vac.salary_from:
+            salary_display = f"from {vac.salary_from} {vac.currency}"
+        elif vac.salary_to:
+            salary_display = f"up to {vac.salary_to} {vac.currency}"
+        else:
+            salary_display = "Salary not specified"
+        print(f"Salary: {salary_display}")
+        print(f"Description: {vac.description}")
+        print("-" * 40)
+
+
 def search_and_add_vacancies(hh_api, storage):
-    search_query = input("Enter search query for vacancies: ")
-    try:
-        vacancies_data = hh_api.get_vacancies(search_query)
-        for vac in vacancies_data:
-            title = vac['name']
-            url = vac['alternate_url']
+    """Searches and adds new vacancies from HeadHunter."""
+    search_query = input("Enter search query: ")
+    hh_vacancies = hh_api.get_vacancies(search_query)
+    vacancies_list = []
 
-            # Валидация URL
-            try:
-                validated_url = validate_url(url)
-            except ValueError as e:
-                print(f"Invalid URL for vacancy '{title}': {e}")
-                continue
+    for vac in hh_vacancies:
+        try:
+            validated_url = validate_url(vac['alternate_url'])
+            salary_from, salary_to, currency = parse_salary(vac['salary'])
+            print(f"Parsed salary: from {salary_from} to {salary_to} {currency}")  # Отладка зарплаты
+            vacancy = Vacancy(
+                title=vac['name'],
+                url=validated_url,
+                salary_from=salary_from,
+                salary_to=salary_to,
+                currency=currency,
+                description=vac['snippet']['requirement'] or "No description available"
+            )
+            vacancies_list.append(vacancy)
+        except ValueError as e:
+            print(f"Invalid URL for vacancy '{vac['name']}': {e}")
+            continue
 
-            salary_str = parse_salary(vac.get('salary'))
+    # Save vacancies
+    for vacancy in vacancies_list:
+        storage.write_data([{
+            'title': vacancy.title,
+            'url': vacancy.url,
+            'salary_from': vacancy.salary_from,
+            'salary_to': vacancy.salary_to,
+            'currency': vacancy.currency,
+            'description': vacancy.description
+        }])
 
-            description = vac['snippet']['requirement'] or "No description available"
+    # Debugging: Check if vacancies_list is populated
+    if not vacancies_list:
+        print("No vacancies found or saved.")
+        return
 
-            vacancy = Vacancy(title, validated_url, salary_str, description)
-            storage.write_data([{
-                'title': vacancy.title,
-                'url': vacancy.url,
-                'salary': vacancy.salary,
-                'description': vacancy.description
-            }])
-        print(f"{len(vacancies_data)} vacancies added successfully.")
-    except Exception as e:
-        print(f"Error occurred: {e}")
+    # Top N vacancies by salary
+    top_n = int(input("Enter the number of top vacancies to display: "))
+
+    # Filter by keywords
+    filter_words = input("Enter keywords for filtering vacancies: ").split()
+
+    # Filter by salary range
+    salary_range = input("Enter salary range (e.g., 100000 - 150000): ")
+
+    # Debugging: Check if filtering works
+    filtered_vacancies = filter_vacancies(vacancies_list, filter_words)
+    if not filtered_vacancies:
+        print("No vacancies matched the filter keywords.")
+        return
+
+    print("Vacancies after keyword filtering:")
+    for vac in filtered_vacancies:
+        print(f"Title: {vac.title}, Salary: from {vac.salary_from} to {vac.salary_to} ")
+
+    ranged_vacancies = get_vacancies_by_salary(filtered_vacancies, salary_range)
+    if not ranged_vacancies:
+        print("No vacancies matched the salary range.")
+        return
+
+    sorted_vacancies = sort_vacancies(ranged_vacancies)
+    top_vacancies = get_top_vacancies(sorted_vacancies, top_n)
+
+    # Print vacancies to the screen
+    print_vacancies(top_vacancies)
 
 
 def view_saved_vacancies(storage):
-    vacancies = storage.read_data()
+    """Views saved vacancies from JSON storage."""
+    vacancies_data = storage.read_data()
+    vacancies = [
+        Vacancy(
+            title=vac['title'],
+            url=validate_url(vac['url']),
+            salary_from=vac.get('salary_from'),
+            salary_to=vac.get('salary_to'),
+            currency=vac.get('currency', '-'),
+            description=vac['description']
+        )
+        for vac in vacancies_data
+    ]
+
     if not vacancies:
         print("No vacancies saved yet.")
     else:
-        for idx, vac in enumerate(vacancies, start=1):
-            print(f"\nVacancy {idx}:")
-            print(f"Title: {vac['title']}")
-            print(f"URL: {vac['url']}")
-            print(f"Salary: {vac['salary']}")
-            print(f"Description: {vac['description']}")
-            print("-" * 40)
+        print_vacancies(vacancies)
 
 
 def user_interaction():
+    """Main interaction loop for the user."""
     storage = JSONFileStorage('data/vacancies.json')
     hh_api = HeadHunterAPI()
 
